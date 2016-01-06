@@ -37,4 +37,4 @@ EXPOSE 8080
 USER root
 # TODO: Set the default CMD for the image
 #CMD ["/usr/sbin/slapd start -4 -f /etc/sysconfig/slapd"]
-CMD ["/usr/sbin/slapd start -4 -f /etc/sysconfig/slapd -u ldap -g ldap"]
+#CMD ["/usr/sbin/slapd start -4 -f /etc/sysconfig/slapd -u ldap -g ldap"]
