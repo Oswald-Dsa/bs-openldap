@@ -2,7 +2,7 @@
 
 while [ 1=1 ]
 do
-echo "Test Echo...."
+echo "${0}: `date` : Test Echo...."
 date
 sleep 10
 done
