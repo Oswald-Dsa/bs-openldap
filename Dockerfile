@@ -24,8 +24,8 @@ RUN yum install -y openldap openldap-clients openldap-servers
 
 # TODO: Copy the S2I scripts to /usr/local/s2i, since openshift/base-centos7 image sets io.openshift.s2i.scripts-url label that way, or update that label
 USER root
-#COPY ./.s2i/bin/ /usr/local/s2i
-COPY ./.s2i/bin/* /usr/local/s2i
+COPY ./.s2i/bin/ /usr/local/s2i
+#COPY ./.s2i/bin/* /usr/local/s2i
 RUN  chmod 777 /usr/local/s2i/usr-local-s2i-test-echo-script
 #RUN yum -y install nss_wrapper gettext
 
