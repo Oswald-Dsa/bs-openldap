@@ -1,6 +1,7 @@
 
 # docker.io/centos7
-FROM openshift/base-centos7
+# FROM openshift/base-centos7
+FROM docker.io/centos7
 
 # TODO: Put the maintainer name in the image metadata
 MAINTAINER Oswald D'sa <oswald.dsa@bluescape.com>
