@@ -7,4 +7,5 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-exec <start your server here>
+#exec <start your server here>
+exec /usr/local/s2i/usr-local-s2i-test-echo-script
