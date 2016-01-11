@@ -25,6 +25,7 @@ RUN yum install -y openldap openldap-clients openldap-servers
 USER root
 COPY ./.s2i/bin/ /usr/local/s2i
 RUN  chmod 777 /usr/local/s2i/usr-local-s2i-test-echo-script
+RUN yum -y install nss_wrapper gettext
 
 # TODO: Drop the root user and make the content of /opt/app-root owned by user 1001
 # RUN chown -R 1001:1001 /opt/app-root
